@@ -41,6 +41,11 @@
 
 function showValues( obj ) {
   //Code Here
+  const string = ``
+  for (let key in obj){
+    string += obj[key]
+
+  }
 }
 
 
