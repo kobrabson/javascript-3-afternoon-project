@@ -66,7 +66,7 @@ function greeting( obj ) {
 //Code Here
 function totalPopulation (object){
 
-  const { utah, califoria, texas, arizona} = object
+  const { utah, california, texas, arizona} = object
   // const {utah} = object
   // const {california} = object
   // const {texas} = object
@@ -85,7 +85,13 @@ function totalPopulation (object){
 */
 
 //Code Here
-
+function ingredients (obj) {
+  let health = [];
+  const {carb, fat, protein} = obj;
+  health.push(carb, fat, protein);
+  return health
+  
+}
 
 
 ////////// PROBLEM 5 //////////
