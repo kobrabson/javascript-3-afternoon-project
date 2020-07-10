@@ -21,6 +21,8 @@ const mixedNumbers = [6,3,1,7,5,2,6,8,9,4,2,7,9,3,1,8,4,3];
 */
 
 //Code Here
+mixedNumbers.filter(element, index, array)
+
 let evenNumbers // = mixedNumbers.filter(/* Provide Your Callback Here */)
 
 
@@ -128,16 +130,28 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 
 
 
-let bobsTotal = purchases.filter((element) =>{
-  if(element.owner === `bob`){
-    return element
-  }
-})
 
-.map((element) => {return element.price})
-.reduce((acc, element)=> {
-  return acc + element
-})
+let bobsTotal = purchases.reduce((acc, element) => {
+  if(element.owner === `Bob`){
+    acc += element.price
+  }
+  return acc
+} , 0)
+
+
+
+
+
+// let bobsTotal = purchases.filter((element) =>{
+//   if(element.owner === `bob`){
+//     return element
+//   }
+// })
+
+// .map((element) => {return element.price})
+// .reduce((acc, element)=> {
+//   return acc + element
+// })
 
 // let bobsTotal = purchases.filter(element => elemenet
 //   [`owner`] === `bob`).map(element => element.price).reduce((acc, curr) =>acc + curr);
