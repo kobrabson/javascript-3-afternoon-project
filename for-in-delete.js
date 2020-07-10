@@ -60,11 +60,22 @@ function showValues( obj ) {
 */
 
 //Code Here
-function greaterThan10(obj) {
-  let arr = []
+// function greaterThan10(obj) {
+//   for(let key in obj){
+//     if (obj[key]) > 10 {
+//       obj[key] = 0
+//     }
+//   }
+//   return obj
+// }
+
+function greaterThan10(obj){
   for(let key in obj){
-  arr = obj[key] + 10
+    if(obj[key] > 10 ){
+      obj[key] = 0
+    }
   }
+  return obj
 }
 
 
@@ -79,6 +90,12 @@ function greaterThan10(obj) {
 
 //Code Here
 
+function double (obj){
+  for( let key in obj){
+     obj[key] = obj[key] * 2
+  }
+  return obj
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -92,7 +109,16 @@ function greaterThan10(obj) {
 */
 
 //Code Here
-
+function secrets (obj){
+  let string = ``
+  for(let key in obj){
+    if(key.startsWith(`sh`)){
+      string += obj[key]
+    }
+    
+  }
+  return string
+}
 
 
 /* 
@@ -169,6 +195,4 @@ var deleteTheBigNumbers = {
   (hint: the method includes() may be of use...)
 */
 
-//Code Here
-
-
+//Code H
