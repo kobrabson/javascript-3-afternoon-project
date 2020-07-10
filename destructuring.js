@@ -65,11 +65,13 @@ function greeting( obj ) {
 
 //Code Here
 function totalPopulation (object){
-  const {utah} = object
-  const {california} = object
-  const {texas} = object
-  const {arizona} = object
-  return totalPopulation
+
+  const { utah, califoria, texas, arizona} = object
+  // const {utah} = object
+  // const {california} = object
+  // const {texas} = object
+  // const {arizona} = object
+  return utah + california + texas + arizona
 }
 
 ////////// PROBLEM 4 //////////
