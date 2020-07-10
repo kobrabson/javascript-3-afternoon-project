@@ -109,7 +109,23 @@ function ingredients (obj) {
 */
 
 //Code Here
+function largeNumbers({first, second, third}) {
+  const smallest = Math.min(first, second, third)
+  return smallest
+  
+}
 
+
+// function largeNumbers((first, second, and third)) {
+//   if(first < second && first < third){
+//     return first
+//   } else if (second < first && second < third){
+//     return second
+//   } else (
+//     return third
+//   )
+  
+// }
 
 
 ////////// PROBLEM 6 //////////
@@ -122,4 +138,24 @@ function ingredients (obj) {
 
 //Code Here
 
+// function numberGroups( a, b, c) {
+//   const longest = Math.max( a, b, c)
 
+//   return longest
+  
+// }
+
+function numberGroups({a, b, c}){
+
+
+  if (a.length > b.length && a.length > c.length) {
+    return a }
+  else if (b.length > a.length && b.length > c.length) {
+    return b 
+    
+  } else {
+    return c
+    
+  }
+  
+}
