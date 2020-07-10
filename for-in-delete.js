@@ -41,11 +41,12 @@
 
 function showValues( obj ) {
   //Code Here
-  const string = ``
+  let string = ""
   for (let key in obj){
     string += obj[key]
-
+    console.log(obj[key])
   }
+  return string
 }
 
 
@@ -59,6 +60,12 @@ function showValues( obj ) {
 */
 
 //Code Here
+function greaterThan10(obj) {
+  let arr = []
+  for(let key in obj){
+  arr = obj[key] + 10
+  }
+}
 
 
 
