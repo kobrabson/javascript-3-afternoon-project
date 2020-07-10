@@ -42,7 +42,9 @@ const {year} = carDetails
 function greeting( obj ) {
   //Code Here
 
-  
+  const {firstName} = obj;
+  const {lastName} = obj;
+  const {title} = obj
   
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
@@ -62,8 +64,13 @@ function greeting( obj ) {
 */
 
 //Code Here
-
-
+function totalPopulation (object){
+  const {utah} = object
+  const {california} = object
+  const {texas} = object
+  const {arizona} = object
+  return totalPopulation
+}
 
 ////////// PROBLEM 4 //////////
 
