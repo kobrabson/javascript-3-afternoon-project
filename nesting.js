@@ -174,7 +174,14 @@ var myCar = {
 
 //Code Here
 
-
+function recordCleaner(){
+  for (let i = 0; i < accidents.length; i++) {
+    if ( accidents.atFaultForAccident === true){
+      accidents[atFaultForAccident].splice(0, 1, `false`)
+    }
+    
+  }
+}
 
 
 
