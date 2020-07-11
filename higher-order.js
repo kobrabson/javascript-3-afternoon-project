@@ -71,7 +71,11 @@ const populations = [8175133, 3792621, 2695598, 2100263];
 */
 
 //Code Here
-let totalPopulation //  = populations.reduce(/* Provide Your Callback Here */)
+let totalPopulation = populations.reduce(function(acc, curr){
+  return acc + curr
+})
+
+//  = populations.reduce(/* Provide Your Callback Here */)
 
 
 
@@ -97,7 +101,10 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 //Code Here
-let myStrongest // = monstersInYourPocket.filter(/* Provide Your Callback Here */)
+let myStrongest = monstersInYourPocket.filter(function(element, index, array ){
+  return element.CP > 200
+})
+// = monstersInYourPocket.filter(/* Provide Your Callback Here */)
 
 
 
