@@ -216,4 +216,13 @@ function startsWithK (obj){
   (hint: the method includes() may be of use...)
 */
 
-//Code H
+//Code Here
+
+function hiddenTreasure (obj){
+  for(let key in obj){
+    if(!obj[key].includes(`treasure`) ){
+      delete obj[key]
+    }
+  }
+  return obj
+}
