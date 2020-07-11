@@ -150,6 +150,11 @@ function secrets (obj){
 
 //Code Here
 
+function removePassword (obj){
+delete obj.password
+  return obj
+}
+
 
 
 ////////// PROBLEM 6 //////////
