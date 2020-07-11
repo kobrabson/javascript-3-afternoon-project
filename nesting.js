@@ -125,9 +125,15 @@ var cat = {
 */
 
 //Code Here
+
+
+
 var grumpyActivity;
 var fluffy2ndFriend;
 
+
+grumpyActivity = cat.catFriends[0].activities[1]
+fluffy2ndFriend= cat.catFriends[1].name
 
 
 ////////// PROBLEM 4 //////////
@@ -167,6 +173,8 @@ var myCar = {
 */
 
 //Code Here
+
+
 
 
 
