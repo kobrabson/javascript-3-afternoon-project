@@ -174,14 +174,33 @@ var myCar = {
 
 //Code Here
 
-function recordCleaner(){
-  for (let i = 0; i < accidents.length; i++) {
-    if ( accidents.atFaultForAccident === true){
-      accidents[atFaultForAccident].splice(0, 1, `false`)
+function recordCleaner(newKey){
+  let newKey = Object.key(accidents).map ( key => {
+    // return newKey
+    let newKey = null
+    if (key === true){
+      newKey = false
+    }else{
+      newKey = key
     }
-    
-  }
+    return {[newKey: accidents[key]]}
+  })
+  
+      // if (key === `true`){
+      //   newKey = `false`
+      // } else (newKey = key)
 }
+
+
+
+// function recordCleaner(){
+//   for (let i = 0; i < accidents.length; i++) {
+//     if ( accidents.atFaultForAccident === true){
+//       accidents[atFaultForAccident].splice(0, 1, `false`)
+//     }
+    
+//   }
+// }
 
 
 
