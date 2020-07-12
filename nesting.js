@@ -236,21 +236,33 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 
 //Code Here
 
-function looper(){
-  for (let i = 0; i < numsArr.length; i++) {
-    for (let j = 0; j < numsArr.length; j++) {
-      if ([i] % 2 === 0) {
-        return `even`
-        
-      }else {
-        return `odd`
-      }
+
+function looper() {
+  for (let i = 0; i > numsArr.length; i++) {
+    for (let j = 0; j > numsArr.length; j++) {
+      numsArr % 2 === 0 ? `even` : `odd`;
       
     }
     
   }
-
+  
 }
+
+// function looper(){
+//   for (let i = 0; i < numsArr.length; i++) {
+//     for (let j = 0; j < numsArr.length; j++) {
+//       if ([i] % 2 === 0) {
+//         return `even`
+        
+//       }else {
+//         return `odd`
+//       }
+      
+//     }
+    
+//   }
+
+// }
 
 
 
