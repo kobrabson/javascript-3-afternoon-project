@@ -174,22 +174,37 @@ var myCar = {
 
 //Code Here
 
-function recordCleaner(newKey){
-  let newKey = Object.key(accidents).map ( key => {
-    // return newKey
-    let newKey = null
-    if (key === true){
-      newKey = false
-    }else{
-      newKey = key
-    }
-    return {[newKey: accidents[key]]}
-  })
-  
-      // if (key === `true`){
-      //   newKey = `false`
-      // } else (newKey = key)
+function recordCleaner(){
+  // let notFault = Object.assign[accidents: {atFaultForAccident}] = false;
+  // delete accidents.atFaultForAccident
+ 
 }
+
+// function recordCleaner(){
+//   let {myCar: {accidents:} {atFaultForAccident: true}}
+// }
+
+
+
+
+
+
+
+  // let newKey = Object.key(accidents).map ( key => {
+//     // return newKey
+//     let newKey = null
+//     if (key === true){
+//       newKey = false
+//     }else{
+//       newKey = key
+//     }
+//     return {[newKey: accidents[key]]}
+//   })
+  
+//       // if (key === `true`){
+//       //   newKey = `false`
+//       // } else (newKey = key)
+// }
 
 
 
@@ -220,6 +235,10 @@ var numsArr = [ [1, 2, 3, 4], [5, 6], [7, 8, 9, 10, 11]];
 */
 
 //Code Here
+
+function looper(){
+
+}
 
 
 
